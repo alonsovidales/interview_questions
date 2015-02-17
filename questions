@@ -1,0 +1,110 @@
+V Standard rotated binary search question. You have a sorted   array that has been shifted/cycled, perform a search on it
+
+How would u find out the number of cars passing through a busy bridge
+
+V Print a binary tree by vertical level order
+
+like
+
+      1
+         2 4
+         3 5
+
+         print :
+         3
+         2
+         1 5
+         4
+
+
+V Display the sorted output of a merge of any number of sorted arrays. Then do it again, more efficiently.
+
+V Dicision tree, bla bla bla
+V Retrieve words from a dictionary that are made up of a subsequence of characters in an input string.
+i.e. given an input "ABAT", matching words may include "BAT", "TAB", non-matching words may be "BART" or "BAR". 
+
+V Add two binary numbers (Input as a string)
+Create a decission table, and check all the possibilities
+
+How would you implement division without +, - or multiplication (a "classic" question, but not one of the ones I would focus on).
+
+compare the leaves of a tree with early exit
+
+Write a function to return minimum and maximum in an array. You program should make minimum number of comparisons. (less than O(2n))
+
+Tell me about the N-1 problem with ORMs
+
+Sink Zero in Binary Tree
+
+-- --
+
+Implement a method called printNonComments() which prints out a extract of text with comments removed.
+
+For example, the input:
+
+hello /* this is a
+multi line comment */ all
+
+Should produce:
+
+hello
+all
+
+-- --
+
+Implement method oneEditApart that return boolean:
+true, if using one operations (insert or remove or replace) we can modify one string to get another.
+False otherwise.
+
+// Signature:
+boolean oneEditApart(String s1, String s2)
+// Allowing operations
+insert
+remove
+replace
+
+Example:
+
+oea("cat", "cut") => true // replace "u" -> "a"
+oea("cat", "cuts") => false // no operations
+oea("ca", "ca") => false // no operations
+oea("cats", "cat") => true // remove "s"
+oea("cat", "at") => true // insert "c"
+oea("cat", "cbat") => true // remove "b"
+
+-- --
+
+Write a method to determine if a string is a palindrome.   Vi
+
+-- --
+
+V Write a method to implement the flood fill algorithm.
+Quick union arr = range(32) -> Array from 0 - 31
+
+-- --
+
+V Design a data structure that supports insert, delete min, delete max, get min, and get max, all in log(n) time. 
+BST
+
+-- --
+
+1. Given two strings, determine whether they are anagrams.
+Sol: Check that the leng are the same, convert both in a list, use sorted, and compare one by one the chars
+2. Given a list of strings, return a list of lists of strings, which represents the list grouping strings by whether they are anagrams of one another
+Sol: Usiung the same sol before, modify it to use lists
+
+-- --
+
+V travese is VLR: Create an iterator to traverse a binary tree. When the next function is called on the binary tree return the value at the next node as if you are doing an inorder traversal of the tree. Restrictions: Nodes do not have pointers to their parent node and you can't use recursion.  
+
+-- --
+
+Fibonacci: recursive and iterative.
+
+-- --
+
+How do you find the kth smallest number in a binary search tree.
+
+-- --
+
+Given an array of integers, return all possible subsets of length n
