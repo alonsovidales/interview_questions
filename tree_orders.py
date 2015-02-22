@@ -20,6 +20,24 @@ class TreeNode(object):
 
         return result
 
+    def search_by_pos(self, pos, result=None):
+        if result is None:
+            result = []
+	if len(result) > pos:
+            return False
+
+        if self.l is not None:
+            self.l.search_by_pos(pos, result)
+
+        result.append(self.v)
+        if self.r is not None:
+            self.r.search_by_pos(pos, result)
+
+	if len(result) > pos:
+            return result[pos]
+
+        return False
+
     def in_order(self):
         result = []
         if self.l is not None:
@@ -110,6 +128,14 @@ a2 = TreeNode(2, a1, a6)
 root = TreeNode(4, a2, a3)
 
 print "Pre:", root.pre_order()
+print "Search 0:", root.search_by_pos(0)
+print "Search 1:", root.search_by_pos(1)
+print "Search 2:", root.search_by_pos(2)
+print "Search 3:", root.search_by_pos(3)
+print "Search 4:", root.search_by_pos(4)
+print "Search 5:", root.search_by_pos(5)
+print "Search 8:", root.search_by_pos(8)
+print "Search 9:", root.search_by_pos(9)
 print "In:", root.in_order()
 print "Post:", root.post_order()
 print "Level:", root.level_order()
