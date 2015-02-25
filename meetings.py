@@ -32,34 +32,28 @@ def calc_best_meetings(meetings):
     return max_distance
 
 def calc_min_rooms(meetings):
-    graph = _create_graph(meetings)
-    groups = []
-    group_pos = 0
-    elements = set(graph.keys())
-    while len(elements) > 0:
-        for e in elements:
-            break
-        elements.discard(e)
-        queue = deque([e])
-        if len(groups) <= group_pos:
-            groups.append([])
-        while len(queue) > 0:
-            current = queue.popleft()
-            groups[group_pos].append(current)
-            for dest in graph[current]:
-                if dest in elements:
-                    elements.discard(dest)
-                    queue.append(dest)
+    rooms = []
 
-        group_pos += 1
+    for meeting in sorted(meetings, key=lambda x:x[0]):
+	found_room = False
+	for room in rooms:
+	    last_meeting = room[len(room)-1]
+	    if meeting[0] >= last_meeting[1]:
+		found_room = True
+		room.append(meeting)
+		break
 
-    print groups
+	if not found_room:
+	    rooms.append([meeting])
+
+    return len(rooms)
 
 meetings = (
     (10, 12),
     (10, 11),
     (10, 13),
     (11, 15),
+    (13, 15),
     (13, 14),
     (14, 18),
     (12, 14))
