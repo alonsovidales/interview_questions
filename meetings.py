@@ -11,7 +11,7 @@ def _create_graph(meetings):
 
     return result
 
-def calc_bets_meetings(meetings):
+def calc_best_meetings(meetings):
     graph = _create_graph(meetings)
     queue = deque([(graph.keys()[0], 0)])
     max_distance = 0
@@ -31,6 +31,30 @@ def calc_bets_meetings(meetings):
 
     return max_distance
 
+def calc_min_rooms(meetings):
+    graph = _create_graph(meetings)
+    groups = []
+    group_pos = 0
+    elements = set(graph.keys())
+    while len(elements) > 0:
+        for e in elements:
+            break
+        elements.discard(e)
+        queue = deque([e])
+        if len(groups) <= group_pos:
+            groups.append([])
+        while len(queue) > 0:
+            current = queue.popleft()
+            groups[group_pos].append(current)
+            for dest in graph[current]:
+                if dest in elements:
+                    elements.discard(dest)
+                    queue.append(dest)
+
+        group_pos += 1
+
+    print groups
+
 meetings = (
     (10, 12),
     (10, 11),
@@ -40,7 +64,8 @@ meetings = (
     (14, 18),
     (12, 14))
     
-print calc_bets_meetings(meetings)
+print calc_best_meetings(meetings)
+print calc_min_rooms(meetings)
 
 """
 {
