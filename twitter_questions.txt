@@ -1,0 +1,98 @@
+V 1) find GCD and LCM
+V 2) implement some formula (x-1)! % x = -1. looks easy but for large number is runs out of memory as factorial get very big. The trick is that the formula is to check is x is prime or not. 
+
+Multiply 2 integers that are arbitrarily long. They are given to you as strings, but you cannot cast them into any other data type like doubles etc. 
+
+V Given a n-by-n matrix, each cell has a value of either 0 or 1. A cell indicates a wall if its value is 1. give the length of the shortest path from M[0][0] to M[n-1][n-1]. You can move either up, down, left or right.
+
+V Design gmail was the architecture question. We talked a lot about scaling and reliability.
+
+V Given a two strings, return whether the second is an anagram of a palindrome of the first string.
+
+X curry functions, organizing large data sets, or questions about scaling
+
+Create an embedded list. Any element of the list can be a list and this definition applies recursively. Had to code in C. Write code to solve a maze (any language of choice)
+
+V One problem, finding k biggest number in a list, not difficult
+
+X Use what data structure to solve a problem about first names and last names
+
+V 1) Find the single number in a array, all other elements are paired.
+
+V Give a array A[k], define the set S{k} := { A[k], A[A[k]], A[A[A[k]]], ... }, write program to count the maximum size of Sks.
+
+X Keeping track of the maximum value in a stack as values are pushed and popped
+
+X Determine if a binary search tree is valid or not.  
+
+The hardest question I was hit with was to write a function that takes an integer N and returns an NxN matrix with incrementing integers in a spiral, from outside in. 
+
+V finding the top k items in unsorted array.
+
+Finding overlap intervals.
+
+in-order iterative binary search tree traversal.
+
+The interviewer asked me to implement a trie and write a 'getWithPrefix' function with a wildcard letter '*' 
+
+given a vector of strings of length n with each word having a length of m on average, group all anagrams into a cluster. Do this for the case that n >>>>>> m and in the most efficient way possible. Assume extra space allowed. 
+
+Give an array, find the pairs that their sum is equal to a target number.
+
+Find left sibling of a given node in a tree
+
+adding two large integers represented as strings together
+
+1 = [A|B|C]. The followup to that question involved the scenario where the number<->letter mapping involved numbers with more than one digit, e.g. 1 = [A|B|C], 2 = [D|E|F], 12=[X|Y|Z]
+
+isHappy() where you return false if a number whose digits squared don't add up to 1, true otherwise
+
+I was asked to write the merge() portion of a mergesort. 
+
+JS-specific questions, specifically the context of "this", closures, implementing bind().
+
+I was asked to implement the DOM selector portion of jQuery
+
+listi all RHN numbers (defined as a scenario where there's a pair of unique numbers whose cube add up to the same number). 
+
+Finding the longest palindrom of a string.
+
+Returning the k most frequent words in a string delimited by space.
+
+Reverse the order of words of a sentence in place
+
+Generate a random sentence using markov chains
+
+If there are N lanes and K cars in each lane and Cars[i][j] = (position of car, length of car), and if a frog has to cross the road in one straight jump (vertically down), not encountering any car, write a function to determine if he will be able to do it. You are given a frozen state of the road.
+
+Given only stacks, implement a queue
+
+Perform level-order traversal of an incomplete binary tree, i.e. certain nodes at a level could be empty. 
+
+What does the 'ls' command do at system level when we type it. How is the directory and files maintained in a file system 
+
+Merge 2 streams of integers and implement a getnextInt function. idea is like merge sort
+
+implement integer divide operation using multiply
+
+implement Queue enqueue/dequeue using a stack
+
+Given an array with all elements sorted on each individual row and column find the K-th smallest one  
+
+Implement a hash table (in C)
+
+Given a Tuple for eg. (a, b, c)..
+Output : (*, *, *), (*, *, c), (*, b, *), (*, b, c), (a, *, *), (a, *, c), (a, b, *), (a, b, c)  
+
+Convert infix expression into postfix. 
+
+Write code that walks thru all src code starting from a root dir. and create histogram of number of characters per line across all files.   Answer Question
+"Critique" a snippet of code pasted on collabedit. 
+
+Generate all strings matching a given limited regex syntax. The interview was conducted over a shared text pad website.
+
+I was told to write a scpy function. The input and output are defined as I want
+
+Write a method that counts how many elements in an unsorted array are out of order.
+
+
