@@ -16,5 +16,19 @@ class Fibonacci(object):
 
         return self.__cache[pos]
 
+    def fast_fib(self, n):
+        """ Solves the problem on O(log n) """
+        if n == 0:
+            return (0, 1)
+
+        a, b = self.fast_fib(n // 2)
+        c = a * (b * 2 - a)
+        d = a * a + b * b
+        if n % 2 == 0:
+            return (c, d)
+
+        return (d, c + d)
+
 fib = Fibonacci()
 print fib.fib(6)
+print fib.fast_fib(6)[0]

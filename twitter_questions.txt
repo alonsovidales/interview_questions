@@ -33,11 +33,11 @@ Finding overlap intervals.
 
 in-order iterative binary search tree traversal.
 
-The interviewer asked me to implement a trie and write a 'getWithPrefix' function with a wildcard letter '*' 
+V The interviewer asked me to implement a trie and write a 'getWithPrefix' function with a wildcard letter '*' 
 
-given a vector of strings of length n with each word having a length of m on average, group all anagrams into a cluster. Do this for the case that n >>>>>> m and in the most efficient way possible. Assume extra space allowed. 
+ given a vector of strings of length n with each word having a length of m on average, group all anagrams into a cluster. Do this for the case that n >>>>>> m and in the most efficient way possible. Assume extra space allowed. 
 
-Give an array, find the pairs that their sum is equal to a target number.
+V Give an array, find the pairs that their sum is equal to a target number.
 
 Find left sibling of a given node in a tree
 
