@@ -1,28 +1,15 @@
-
-def move_zeroes_end(num_list):
-    if len(num_list) == 0:
-        return num_list
-
-    end_pos = len(num_list)-1
-    while end_pos > 0 and num_list[end_pos] == 0:
-        end_pos -= 1
-
-    i = 0
-    while i < len(num_list) and i <= end_pos:
-        if num_list[i] == 0:
-            num_list[i] = num_list[end_pos]
-            num_list[end_pos] = 0
-            while end_pos > 0 and num_list[end_pos] == 0:
-                end_pos -= 1
-        i += 1
-
-    if num_list[end_pos] != 0:
-        end_pos += 1
-    return end_pos, num_list
-
-print move_zeroes_end([1, 0, 9, 7, 5, 0, 2, 1])
-print move_zeroes_end([1, 0, 9, 7, 5, 0, 0, 1])
-print move_zeroes_end([])
-print move_zeroes_end([0])
-print move_zeroes_end([0, 0])
-print move_zeroes_end([1, 2])
+class Solution(object):
+    def moveZeroes(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: void Do not return anything, modify nums in-place instead.
+        """
+        sorted = False
+        while not sorted:
+            sorted = True
+            for i in xrange(len(nums)-1):
+                if nums[i] == 0 and nums[i+1] != 0:
+                    aux = nums[i]
+                    nums[i] = nums[i+1]
+                    nums[i+1] = aux
+                    sorted = False

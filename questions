@@ -1,3 +1,10 @@
+boggle
+1. Segment Tree; 2. How to diagnose latency in data center; 
+Print all permutations of 3 pair of parens. ()()(), (()()), (())(),,,. etc  
+Build a simplified YELP-like service.  
+
+
+
 V Standard rotated binary search question. You have a sorted   array that has been shifted/cycled, perform a search on it
 
 How would u find out the number of cars passing through a busy bridge
